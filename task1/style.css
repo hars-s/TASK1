@@ -1,0 +1,105 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image:url("1.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+.container{
+    width: 40%;
+    top: 30%;
+    left: 30%;
+    background-color: transparent;
+    border-radius: 10px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+}
+
+.container h1{
+    text-align: left;
+    font-size:xx-large;
+    color: whitesmoke;
+    padding-left: 30px;
+}
+
+#addtask{
+    position: relative;
+    padding: 40px 20px;
+}
+#addtask input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: royalblue;
+    font-weight: 700;
+    position: relative;
+    border-radius: 5px;
+     font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#addtask input:focus{
+    outline: white double 8px;
+    border-color: #0d75ec;
+}
+
+#addtask button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0d75ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 7px double #9ae309;
+    cursor: pointer;
+    background-color: #caccb8;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.task span{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #0a2ea4;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
